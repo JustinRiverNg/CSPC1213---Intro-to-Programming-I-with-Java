@@ -28,7 +28,7 @@ public class SpaceTicket {
    public static void main(String[] args) {
       Scanner scan = new Scanner(System.in);
       Random generator = new Random();
-      DecimalFormat fmt = new DecimalFormat("###,###.00");
+      DecimalFormat fmt = new DecimalFormat("#,###,###.00");
       String ticket = "";
       String price = "";
       char category;
@@ -58,7 +58,7 @@ public class SpaceTicket {
       if (ticket.length() >= 25) {
       
          // Extract values with substring method
-         price = ticket.substring(0, 7); // Price
+         price = ticket.substring(0, 6); // Price
          ticketPrice = Double.parseDouble(price);
          category = ticket.charAt(8); // Category
          time = ticket.substring(9, 13); // Time
