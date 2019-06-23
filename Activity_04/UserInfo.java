@@ -99,4 +99,6 @@ public class UserInfo {
    public void logOn() {
       status = ONLINE;
    }
+   
+   
 }

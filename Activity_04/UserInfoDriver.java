@@ -25,5 +25,16 @@ public class UserInfoDriver {
       user2.setAge(21);
       user2.logOn();
       System.out.println("\n" + user2);
+      
+      ArrayList<String> shapes = new ArrayList<String>();
+      
+      shapes.add("Circle");
+      shapes.add("Square");
+      shapes.add("Triangle");
+      int before = shapes.indexOf("Square");
+      shapes.remove(1);
+      int allShapes = shapes.size();
+      int after = shapes.indexOf("Circle");
+   }
    }
 }
